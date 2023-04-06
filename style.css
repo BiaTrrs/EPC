@@ -1,0 +1,14 @@
+header{
+    background-color: gray
+}
+
+nav a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+
+   }
+nav li{
+    display: inline;
+}
+nav 
