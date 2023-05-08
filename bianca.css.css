@@ -1,0 +1,131 @@
+body {
+    background-color:rgb(29, 29, 29);/*define a cor do fundo*/
+    text-align: center;/*define o alinhamento do texto*/
+    display: flex;/*define o tamanho inicial de um item*/
+    margin: auto;/*define a margem automatica*/
+    flex-direction: column;/*define a direção dos elementos*/
+    justify-content: center;/*define o alinhamento dos elemnetos*/
+    align-items: center;/*define o alinhamento dos items*/
+    color: red;/*define a cor do texto*/
+}
+
+body:-webkit-scrollbar {/*webkit=ofusca os caracteres/renderiza a pagina*/
+                        /*scrollbar=barra lateral*/
+    width: 12px;/*define a largura da area de conteudo de um elemento*/
+}
+
+
+body:-webkit-scrollbar-thumb { /*webkit=ofusca os caracteres/renderiza a pagina*/
+                               /*scrollbar=barra lateral*/
+                               /*thumb=imagem em miniatura*/
+    background-color: #363636;/*define a cor do fundo*/
+    border-radius: 50px;/*define a borda arredondada*/
+    border: 3px solid red;/*adiciona um contorno em um elemento*/
+}
+
+header {
+    width: 800px;/*define a largura da area de conteudo de um elemento*/
+    height: auto;/*define o tamanho vertical ocupado por uma tag na tela do navegador*/
+    margin: 50px;/*define a margem*/
+    padding: 10px;/*define uma distancia interna entre um elemento e sua borda*/
+    font-size: 30px;/*define o tamanho da fonte*/
+    background-color: #363636;/*define o plano de fundo*/
+    list-style-type: none;/*define a alteraçao do marcador dos items da lista*/
+    border-radius: 10px;/*define a borda arredondada*/
+    box-shadow: inset 0 0 10px red;/*define a sombra da borda*/
+    transition: all ease-in-out 1s;/*define o tempo de transiçao*/
+}
+
+header:hover {
+    box-shadow: inset 0 0 40px red;/*define a sombra da borda*/
+}
+
+header li {
+    display: inline;/*define a indicaçao de como os elementos serão dispostos na pagina*/
+    padding: 0.2em;/*define uma distancia interna entre o elemento e sua borda*/
+}
+
+header a {
+    color: white;/*define a cor do texto*/
+    text-decoration: none;/*define a decoraçao do texto*/
+    transition: all ease-in-out 0.5s;/*define o tempo de transiçao*/
+}
+
+header a:hover {
+    color: rgb(255, 0, 0);/*define a cor do texto*/
+    text-shadow: 0 0 10px rgb(255, 0, 0);/*define a sombra do texto*/
+}
+
+.texto {
+    font-family: 'EB Garamond', serif;/*define uma lista de familia de fontes*/
+    justify-content: center;/*define o alinhamento dos elementos*/
+    margin: 50px;/*define a margem*/
+    overflow: hidden;/**/
+    font-size: 23px;/*define o tamanho da fonte*/
+    width: 900px;/*define a largura da area de conteudo de um elemento*/
+    height: 600px;/*define o tamanho vertical ocupado por uma tag na tela do navegador*/
+    background: rgb(#363636);/*define a cor do plano de fundo*/
+    box-shadow: inset 0 0 50px rgb(255, 0, 0);/*define a sombra da borda*/
+    border-radius: 50px;/*define a borda arredondada*/
+    transition: all ease-in-out .5s;/*define o tempo de transiçao*/
+    text-shadow: 10px 10px #000000;/*define a sombra do texto*/
+}
+.textodentrocaixa {
+    padding-top: 50px;/*define o espaçamento superior no elemento*/
+    padding-left: 50px;/*define a distancia aplicada no lado esquerdo do elemento*/
+    padding-right: 50px;/*define a distancia aplicada no lado direito do elemento*/
+}
+.texto:hover {
+    box-shadow: inset 0 0 5px rgb(252, 0, 0);/*define a sombra da borda*/
+    border-radius: 5px;/*define a borda arredondada*/
+    overflow: auto;/**/
+}
+
+.texto::-webkit-scrollbar {
+    width: 12px;/*define a largura da area de conteudo de um elemento*/
+}
+
+
+.texto::-webkit-scrollbar-thumb {
+    background-color: #363636;/*define a cor do plano de fundo*/
+    border-radius: 50px;/*define a borda arredondada*/
+    box-shadow: 0 0 20px rgb(255, 0, 0);/*define a sombra da borda*/
+    border: 3px solid red;/*define o contorno em volta de um elemento*/
+}
+
+img {
+    box-shadow: red 0 0 5px;/*define a sombra da caixa*/
+    border-radius: 50%;/*define a borda arredondada*/
+    transition: all ease-in-out 1s;/*define o tempo de transiçao*/
+    margin: 10px;/*define a margem*/
+}
+
+img:hover {
+    transform: scale(2);/*permite dar zoom ou rodar elementos*/
+    filter: brightness(200%) drop-shadow(0 0 20px red);/*define a filtragem de elementos*/
+    margin: 200px;/*define a margem*/
+}
+
+footer {
+    justify-content: center;/*define o alinhamento dos elementos*/
+    align-items: center;/*define o alinhamentos dos items*/
+    margin: auto;/*define a margem*/
+    width: 800px;/*define a largura da area de conteudo de um elemento */
+    height: auto;/*define o tamanho vertical ocupado por uma tag na tela do navegador*/
+    margin-bottom: 0.5em;/*define a area da margem na parte inferior de um elemento*/
+    margin-top: 0.5em;/*define a area da margem na parte superior de um elemento*/
+    padding: 0.5em;/*define uma distancia interna entre o elemento e sua borda*/
+    font-size: 20px;/*define o tamanho da fonte*/
+    color: white;/*define a cor do texto*/
+    background-color: #363636;/*define a cor do plano de fundo*/
+    list-style-type: none;/*define a alteraçao do marcador dos items da lista*/
+    border-radius: 10px;/*define a borda arredondada*/
+    box-shadow: inset 0 0 5px rgb(255, 0, 0);/*define a sombra da caixa*/
+    transition: all ease-in-out 1s;/*define o tempo de transiçao*/
+}
+
+footer:hover {
+    color: red;/*define a cor do texto*/
+    border-radius: 20px;/*define a borda arredondada*/
+    box-shadow: inset 0 0 20px rgb(255, 0, 0);/*define a sombra da caixa*/
+}
